@@ -2,7 +2,7 @@
 
 # Calculate the area of a rectangle or return a square 
 
-def area_calculate(length, width):
+def calculate_area(length, width):
 
     if length == width:
         return "This is a square!"
@@ -15,7 +15,7 @@ def main():
     width = float(input("Enter the width: "))
 
     # Call function
-    result = area_calculate(length, width)
+    result = calculate_area(length, width)
 
     # Display result
     print("Area:" if isinstance(result, float) else "Message:", result)
